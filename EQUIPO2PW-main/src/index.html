@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="css/styles.css"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  <script type="text/javascript">
+
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "mr8942734@gmail.com",
+        Password: "B3B72F1621D6133F37CC0515F7EC00450E63",
+        To: 'mr8942734@gmail.com',
+        From: "mr8942734@gmail.com",
+        Subject: "Sending Email ",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+<br>
+<br><br><br>
+
+</head>
+<center>
+<h1>Buscador de Bebidas</h1>
+<form id="search-form">
+    <input type="text" id="search-input" placeholder="bebida porfavor">
+    <input type="submit" value="Buscar">
+  </center>
+</form>
+<div id="result-container"></div>
+
+<script src="main.js"></script>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <header id="header">
+        <nav id="navbar">
+          <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgba(54, 5, 32, 0.486);">
+            <header class="container-fluid">
+              <a>
+                <a href="www.thecocktaildb.com" id="logo-header">
+            <img src="https://www.thecocktaildb.com/images/logo.png" alt="logo-Drink" />
+          </a>
+
+           <!-- Boton tipo hamburguesa -->
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+           
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" style="color: rgb(255, 255, 255);" href="" >Desayuno</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: rgb(255, 255, 255);" href="" >Comida</a>
+                
+            </ul>
+   
+          
+        </div>
+      </nav>
+    </nav>
+  </header>
+  
+<br><br>
+     
+        <br> <center>
+          <button id="random-button">Obtener Coctel Aleatorio</button>
+        <div id="result-container"></div>
+      </center>
+
+          <br><br>
+
+
+           
+          </div>
+
+          <div class="row">
+            <div class="col p-3 bg-primary text-white" style="background-color: rgb(255, 145, 185) !important;">
+              <center>
+                <figure>
+               
+              </center>
+            </div>
+
+
+            <!-- TITILO Y PARRAFOS DE NUESTRA PAGINA-->
+            <div class="col p-3 bg-dark text-brack" style="background-color: rgb(255, 145, 185) !important;">
+              <H3> Holi </H3>
+              <H4>siii</H4>
+              <p>Norman Nayart Alamos Hernandez</p>
+              <p>Miguel Iran Reyes Uribe</p>
+            </div>
+
+            <!-- FORMULARIO DE REGISTRO-->
+            <div class="col p-3 bg-primary text-brack" style="background-color: rgb(255, 145, 185) !important;">
+              <center>
+                <figure>
+                  <footer class="footer">
+                    <form class="seccionarfooter">
+                      <div class="container mt-3">
+                        <Center>
+                          <h4>PONTE EN CONTACTO</h4>
+                          <form action="enviar_correo.php" method="POST">
+
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
+
+                            <input type="number" id="number" name="number" placeholder="Telefono" required><br><br>
+
+                            <input type="correo" id="correo" name="uncorreo" placeholder="Correo electronico" required
+                              style="font-size: 100%"><br><br>
+                            <button type="submit" class="color btn-danger" class="btn rounded-pill w-15">Enviar</button>
+                        </Center>
+                    </form>
+            </div>
+            </footer>
+          </div>
+
+        </div>
+        <script src="js/index.js"></script>
+        <script src="js/menu.js"></script>
+</body>
+
+</html>
